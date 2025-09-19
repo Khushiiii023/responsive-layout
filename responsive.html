@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; }
+    header { background:#444; color:white; padding:20px; text-align:center; }
+    nav { display:flex; justify-content:center; gap:20px; background:#222; padding:10px; }
+    nav a { color:white; text-decoration:none; }
+    .container { padding:20px; }
+    .cards { display:flex; gap:20px; flex-wrap:wrap; }
+    .card { flex:1 1 calc(33% - 40px); background:#f2f2f2; padding:20px; border-radius:10px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:15px; margin-top:30px; }
+    .grid div { background:#ddd; padding:40px; text-align:center; border-radius:8px; }
+    footer { background:#444; color:white; text-align:center; padding:20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Website</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">Service 1</div>
+      <div class="card">Service 2</div>
+      <div class="card">Service 3</div>
+    </div>
+
+    <h2>Gallery</h2>
+    <div class="grid">
+      <div>Photo 1</div>
+      <div>Photo 2</div>
+      <div>Photo 3</div>
+      <div>Photo 4</div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Responsive Website</p>
+  </footer>
+</body>
+</html>
